@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+/* *,
+*::after,
+*::before { */
+  *{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  position: relative;
+  width: 22rem;
+  height: 22rem;
+  margin: 2rem;
+}
+
+.container .box:hover .imgBox {
+  transform: translate(-2.5rem, -2.5rem);
+}
+
+.container .box:hover .content {
+  transform: translate(2.5rem, 2.5rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {
+  width: 24rem;
+  height: 22rem; border-radius: 4px;
+  object-fit: cover;
+  resize: both;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  background-color: #414040;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.content h3 {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.content span {
+  color: #ede6e6;
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .container .box:hover .content {
+    transform: translate(0, 2.5rem);
+  }
+
+  .container .box:hover .imgBox {
+    transform: translate(0, -2.5rem);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="pro2 addons/Family-Star-Review.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Family Star</br>
+                <span>a family drama</span></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="pro2 addons/the-croods-movie-wallpaper-preview.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>The Croods </br>
+                <span>Lorem 3d movie</span></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="pro2 addons/my fault.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>My Fault</br>
+                <span>a romcom</span></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="pro2 addons/rathnam-review-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Rathnam</br>
+                <span>Action thriller</span></h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
